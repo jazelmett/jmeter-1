@@ -76,7 +76,6 @@ public final class JMeterContextService {
      *            {@link JMeterContext}
      */
     public static void replaceContext(JMeterContext context) {
-        threadContext.remove();
         threadContext.set(context);
     }
     /**

@@ -20,6 +20,7 @@ pluginManagement {
     plugins {
         fun PluginDependenciesSpec.idv(id: String) = id(id) version extra["$id.version"].toString()
 
+        kotlin("jvm") version extra["kotlin.version"].toString()
         idv("com.diffplug.gradle.spotless")
         idv("com.github.spotbugs")
         idv("com.github.vlsi.crlf")

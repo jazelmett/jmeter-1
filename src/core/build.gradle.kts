@@ -73,6 +73,7 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind")
     implementation("com.miglayout:miglayout-swing")
     implementation("org.freemarker:freemarker")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.mozilla:rhino")
     implementation("org.apache.xmlgraphics:xmlgraphics-commons")
     implementation("org.apache.commons:commons-text")
