@@ -86,6 +86,7 @@ project("http") {
         }
         implementation("dnsjava:dnsjava:2.1.8")
         implementation("org.apache.httpcomponents:httpmime:4.5.8")
+        implementation("org.apache.httpcomponents.client5:httpclient5")
         implementation("org.brotli:dec:0.1.2")
         testImplementation(testFixtures(project(":src:testkit-wiremock")))
         testImplementation("com.github.tomakehurst:wiremock-jre8")
