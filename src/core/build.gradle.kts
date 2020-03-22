@@ -66,8 +66,14 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind")
     implementation("com.formdev:svgSalamander")
     implementation("com.github.ben-manes.caffeine:caffeine")
-    implementation("com.github.weisj:darklaf-core")
-    implementation("com.github.weisj:darklaf-property-loader")
+    implementation("com.github.weisj:darklaf-core") {
+        // https://github.com/weisJ/darklaf/issues/118
+        exclude("com.github.weisj", "darklaf-dependencies-bom")
+    }
+    implementation("com.github.weisj:darklaf-property-loader") {
+        // https://github.com/weisJ/darklaf/issues/118
+        exclude("com.github.weisj", "darklaf-dependencies-bom")
+    }
     implementation("com.miglayout:miglayout-swing")
     implementation("commons-codec:commons-codec") {
         because("DigestUtils")
