@@ -34,6 +34,7 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 import org.apache.jmeter.gui.GUIMenuSortOrder;
+import org.apache.jmeter.gui.TestElementMetadata;
 import org.apache.jmeter.gui.util.HorizontalPanel;
 import org.apache.jmeter.gui.util.VerticalPanel;
 import org.apache.jmeter.protocol.http.config.gui.UrlConfigGui;
@@ -49,6 +50,7 @@ import org.apache.jorphan.gui.JLabeledTextField;
  * HTTP Sampler GUI
  */
 @GUIMenuSortOrder(1)
+@TestElementMetadata(labelResource = "web_testing_title")
 public class HttpTestSampleGui extends AbstractSamplerGui {
 
     private static final long serialVersionUID = 241L;

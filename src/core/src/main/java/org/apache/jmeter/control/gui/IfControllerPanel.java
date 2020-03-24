@@ -31,6 +31,7 @@ import javax.swing.event.ChangeListener;
 
 import org.apache.jmeter.control.IfController;
 import org.apache.jmeter.gui.GUIMenuSortOrder;
+import org.apache.jmeter.gui.TestElementMetadata;
 import org.apache.jmeter.gui.util.JSyntaxTextArea;
 import org.apache.jmeter.gui.util.JTextScrollPane;
 import org.apache.jmeter.testelement.TestElement;
@@ -43,6 +44,7 @@ import org.apache.jmeter.util.JMeterUtils;
  *
  */
 @GUIMenuSortOrder(1)
+@TestElementMetadata(labelResource = "if_controller_title")
 public class IfControllerPanel extends AbstractControllerGui implements ChangeListener {
 
     private static final long serialVersionUID = 240L;
